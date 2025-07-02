@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO meta tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Sherif">
+    <meta name="keywords" content="">
+    <!-- favicon ico -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- fontawesome style -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- bootstrap style -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- animation style -->
+    <link rel="stylesheet" href="./css/animation.css">
+    <!-- custom style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- media style -->
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <!-- ******************************** start navbar ******************************** -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-center align-items-center column-gap-3" href="#">
+                <img src="./img/logo.png" alt="">
+                <div class="content-logo">
+                    <h1 class="m-0 fs-4">Weather</h1>
+                    <small class="fs-10">Day by day</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto column-gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ******************************** end navbar ******************************** -->
+    <!-- ******************************** start main ******************************** -->
+    <main class="main">
+        <!-- ******************************** start header ******************************** -->
+        <header class="header">
+            <div class="container">
+                <div class="inner">
+                    <a href="./index.html">Home</a>
+                    <span>Contact</span>
+                </div>
+            </div>
+        </header>
+        <!-- ******************************** end header ******************************** -->
+        <!-- ******************************** start contact ******************************** -->
+        <section class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="contact-details">
+                            <div class="map"><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106065.79815320612!2d29.875524939415918!3d31.22959167188826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c49126710fd3%3A0xb4e0cda629ee6bb9!2sAlexandria%2C%20Alexandria%20Governorate!5e0!3m2!1sen!2seg!4v1751478308682!5m2!1sen!2seg"
+                                    class="border-0 w-100" height="300" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                            <div class="contact-info">
+                                <address class="d-flex align-items-center column-gap-2">
+                                    <img src="./img/icon-marker.png" alt="location">
+                                    <p class="mb-0">Company Name INC.
+                                        2803 Avenue Street, Los Angeles</p>
+                                </address>
+                                <a href="#"><img src="./img/icon-phone.png" class="me-2" alt="phone">+20 10 1298
+                                    3148</a>
+                                <a href="#"><img src="./img/icon-envelope.png" class="me-2"
+                                        alt="email">sherefalex34@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-1">
+                        <h2 class="section-title">Contact us</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore
+                            ducimus,
+                            facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi
+                            facilis
+                            odit hic, ipsum sed!</p>
+                        <form action="#" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6"><input class="form-control" type="text" name="name" id="name"
+                                        autocomplete="off" placeholder="Your name..."></div>
+                                <div class="col-md-6"><input class="form-control" type="email" name="email" id="email"
+                                        autocomplete="off" placeholder="Email Addresss..."></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"><input class="form-control" type="text" name="coname" id="coname"
+                                        autocomplete="off" placeholder="Company name..."></div>
+                                <div class="col-md-6"><input class="form-control" type="text" name="webname"
+                                        id="webname" autocomplete="off" placeholder="Website..."></div>
+                            </div>
+                            <textarea class="form-control" rows="8" name="message" id="message"
+                                placeholder="Message..."></textarea>
+                            <div class="text-end">
+                                <button class="btn btn-outline-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ******************************** end contact ******************************** -->
+    </main>
+    <!-- ******************************** end main ******************************** -->
+    <!-- ******************************** start footer ******************************** -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <form action="" class="location-form position-relative">
+                        <input type="email" name="email" autocomplete="name" class="form-control" id="email"
+                            placeholder="Enter your email to subscribe..." required>
+                        <button class="btn btn-primary position-absolute" id="subscribe">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center mt-lg-0 mt-5">
+                    <ul
+                        class="social-links mb-0 list-unstyled d-flex justify-content-center align-items-center column-gap-2">
+                        <li>
+                            <a href="https://web.facebook.com/" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/?lang=en" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.pinterest.com/" target="_blank">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="mt-5">Copyright 2025 Company name. Designed by Sherif. All rights reserved</p>
+        </div>
+    </footer>
+    <!-- ******************************** end footer ******************************** -->
+    <!-- bootstrap script -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

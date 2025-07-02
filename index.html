@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO meta tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Sherif">
+    <meta name="keywords" content="">
+    <!-- favicon ico -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- fontawesome style -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- bootstrap style -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- animation style -->
+    <link rel="stylesheet" href="./css/animation.css">
+    <!-- custom style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- media style -->
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <!-- ******************************** start navbar ******************************** -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-center align-items-center column-gap-3" href="#">
+                <img src="./img/logo.png" alt="">
+                <div class="content-logo">
+                    <h1 class="m-0 fs-4">Weather</h1>
+                    <small class="fs-10">Day by day</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto column-gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./content.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ******************************** end navbar ******************************** -->
+    <!-- ******************************** start main ******************************** -->
+    <main class="main">
+        <!-- ******************************** start form section ******************************** -->
+        <section class="hero">
+            <div class="container">
+                <form action="" class="location-form position-relative">
+                    <input type="search" id="search" name="search" class="form-control" autocomplete="off"
+                        placeholder="Search city...">
+                    <ul id="suggestions" class="list-unstyled position-absolute w-100 z-3"></ul>
+                    <button class="btn btn-primary position-absolute" id="find">Find</button>
+                </form>
+            </div>
+        </section>
+        <!-- ******************************** end form section ******************************** -->
+        <!-- ******************************** start weather section ******************************** -->
+        <section class="weather">
+            <div class="container">
+                <div class="row">
+                    <div class="item col-lg-4 px-0 text-center">
+                        <!-- get it dynamic from js code -->
+                    </div>
+                    <div class="item col-lg-4 px-0 text-center">
+                        <div class="item-header">
+                            <p class="day mb-0">Wednesday</p>
+                        </div>
+                        <div class="item-content">
+                            <div class="weather-icon mb-3">
+                                <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48">
+                            </div>
+                            <div class="degree">38.3<sup>o</sup>C</div>
+                            <div class="degree2"><small>24.8<sup>o</sup></small></div>
+                            <div class="custom fs-5">Sunny</div>
+                        </div>
+                    </div>
+                    <div class="item col-lg-4 px-0 text-center">
+                        <div class="item-header">
+                            <p class="day mb-0">Thursday</p>
+                        </div>
+                        <div class="item-content">
+                            <div class="weather-icon mb-3"><img
+                                    src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48"></div>
+                            <div class="degree">39.9<sup>o</sup>C</div>
+                            <div class="degree2"><small>25.5<sup>o</sup></small></div>
+                            <div class="custom fs-5">Sunny</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ******************************** end weather section ******************************** -->
+    </main>
+    <!-- ******************************** end main ******************************** -->
+    <!-- ******************************** start footer ******************************** -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <form action="" class="location-form position-relative">
+                        <input type="email" name="email" autocomplete="name" class="form-control" id="email"
+                            placeholder="Enter your email to subscribe..." required>
+                        <button class="btn btn-primary position-absolute" id="subscribe">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center mt-lg-0 mt-5">
+                    <ul
+                        class="social-links mb-0 list-unstyled d-flex justify-content-center align-items-center column-gap-2">
+                        <li>
+                            <a href="https://web.facebook.com/" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/?lang=en" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.pinterest.com/" target="_blank">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="mt-5">Copyright 2025 Company name. Designed by Sherif. All rights reserved</p>
+        </div>
+    </footer>
+    <!-- ******************************** end footer ******************************** -->
+    <!-- bootstrap script -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- main script -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

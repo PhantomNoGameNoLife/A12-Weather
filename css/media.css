@@ -1,0 +1,35 @@
+/* Large devices (desktops, 992px and down) */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        text-align: center;
+        background-color: var(--bg-menu);
+        position: absolute;
+        top: 75px;
+        z-index: 2;
+        left: 10%;
+        right: 10%;
+    }
+
+    .navbar-collapse .nav-link {
+        border: none;
+        border-bottom: 1px solid var(--main-color);
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        padding: 1.25rem;
+    }
+
+    .navbar-collapse .nav-item:last-child .nav-link {
+        border-bottom: none;
+    }
+}
+
+/* Small devices (landscape phones, 576px and down) */
+@media (max-width: 576px) {
+    .navbar-collapse {
+        left: 0;
+        right: 0;
+    }
+}
