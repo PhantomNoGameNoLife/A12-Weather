@@ -7,7 +7,6 @@ const Suggestions = document.querySelector('#suggestions')
 async function getWeatherData(ip) {
     const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=8e9dfa8c5b3141948f3203031250107&q=${ip}&days=3`);
     const data = await res.json();
-    console.log(data);
     displayToday(data.current, data.location)
     displayForecast(data.forecast.forecastday)
 }
@@ -92,7 +91,7 @@ async function displaySuggestions(value) {
 
 // while typing display the weather & Suggestions but after value length > 2
 searchInput.addEventListener("input", e => {
-    if (e.target.value.length > 2) {
+    if (e.target.value.trim().length > 2) {
         displaySuggestions(e.target.value.trim())
         getWeatherData(e.target.value.trim())
     }
@@ -104,3 +103,11 @@ searchInput.addEventListener("blur", _ => {
         Suggestions.innerHTML = "";
     }, 500);
 });
+
+// when click on find button send the input value to city
+document.querySelector('.location-form').addEventListener('submit', e => {
+    e.preventDefault();
+    if (searchInput.value.trim().length > 2) {
+        getWeatherData(searchInput.value.trim())
+    }
+})
